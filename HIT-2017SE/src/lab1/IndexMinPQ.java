@@ -1,5 +1,7 @@
 package lab1;
 
+//Edit on B1
+
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
