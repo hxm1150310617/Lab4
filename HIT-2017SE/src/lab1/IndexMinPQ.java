@@ -5,6 +5,8 @@ package lab1;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
+//now on C4
+
 public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
     private int maxN;        // maximum number of elements on PQ
     private int n;           // number of elements on PQ

@@ -9,6 +9,8 @@ import javax.swing.*;
 
 import com.sun.prism.Image;
 
+//on branch C4
+
 public class GUI_lab1 extends JFrame {
 	public GUI_lab1(String picPath) {
 		super("Show Graph ");
