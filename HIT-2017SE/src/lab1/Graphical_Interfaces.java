@@ -1,5 +1,6 @@
 package lab1;
 
+// on B2
 import java.awt.*;
 import java.awt.event.*;
 import java.io.FileNotFoundException;

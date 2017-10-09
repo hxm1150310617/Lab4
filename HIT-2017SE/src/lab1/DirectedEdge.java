@@ -1,5 +1,7 @@
 package lab1;
 
+//ON b2
+
 public class DirectedEdge {
     private final int v;
     private final int w;

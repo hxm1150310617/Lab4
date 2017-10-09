@@ -1,5 +1,7 @@
 package lab1;
 
+//on b2
+
 import java.io.*;
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
