@@ -1,0 +1,22 @@
+digraph Dijkstra {
+  size = "8.5, 11";
+  fontname = "Roboto";
+  fontsize = 10;
+  
+  node [shape = circle, fontname = "Roboto", fontsize = 10];
+  edge [fontname = "Roboto", fontsize = 10];
+  To -> explore [label="1",color="red"];
+
+  To -> explore [label="1",color="red"];
+  explore -> strange [label="1",color="red"];
+
+  To -> explore [label="1",color="red"];
+  explore -> strange [label="1",color="red"];
+  strange -> new [label="1",color="red"];
+
+  To -> explore [label="1",color="red"];
+  explore -> strange [label="1",color="red"];
+  strange -> new [label="1",color="red"];
+  new -> civilizations [label="1",color="red"];
+
+}
