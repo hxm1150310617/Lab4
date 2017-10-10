@@ -5,6 +5,7 @@ import java.util.LinkedList;
 import java.util.Map;
 import java.util.Scanner;
 
+
 public class Digraph {
     private final int Vertices;
     private int Edges;
