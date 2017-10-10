@@ -19,4 +19,5 @@ public class TestGraph {
         EdgeWeightedDigraph.getDijkstraBetweenTwoNodes(EWD, "To", "civilizations");
         EdgeWeightedDigraph.getDijkstraSP(EWD, "To");
     }
+
 } // b1
