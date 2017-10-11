@@ -1,7 +1,7 @@
-<<<<<<< HEAD
-# Lab1
+
+
 Lab1
-=======
+
 
 # 加权有向图的数据结构
 
@@ -15,5 +15,6 @@ Lab1
 
 
 
+
 // Change something
->>>>>>> b6207aecff5aac1dd7eadcdaf96c8c28eef8c8bd
+
