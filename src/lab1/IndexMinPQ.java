@@ -25,12 +25,12 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
         return n == 0;
     }
 
-    public boolean contains(int i) {
+    public boolean Contains(int i) {
         if (i < 0 || i >= maxN) throw new IllegalArgumentException();
         return qp[i] != -1;
     }
 
-    public int size() {
+    public int Size() {
         return n;
     }
 

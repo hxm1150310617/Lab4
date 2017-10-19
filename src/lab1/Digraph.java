@@ -35,12 +35,12 @@ public class Digraph {
     }
 
     @SuppressWarnings("unchecked")
-    public Digraph(int V) {
-        if (V < 0) throw new IllegalArgumentException("Number of vertices in a Digraph must be nonnegative");
-        this.Vertices = V;
+    public Digraph(int Vertice) {
+        if (Vertice < 0) throw new IllegalArgumentException("Number of vertices in a Digraph must be nonnegative");
+        this.Vertices = Vertice;
         this.Edges = 0;
-        adj = (LinkedList<Integer>[]) new LinkedList[V];
-        for (int i = 0; i < V; i++) {
+        adj = (LinkedList<Integer>[]) new LinkedList[Vertice];
+        for (int i = 0; i < Vertice; i++) {
             adj[i] = new LinkedList<>();
         }
     }
@@ -64,15 +64,15 @@ public class Digraph {
 
     }
 
-    public int getVertices() {
+    public int GetVertices() {
         return Vertices;
     }
 
-    public int getEdges() {
+    public int GetEdges() {
         return Edges;
     }
 
-    private void addEdge(String v, String w) {
+    private void AddEdge(String v, String w) {
         adj[map.get(v)].add(map.get(w));   //only one side!
         Edges++;
     }

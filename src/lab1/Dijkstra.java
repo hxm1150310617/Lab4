@@ -12,9 +12,9 @@ public class Dijkstra {
     private IndexMinPQ<Integer> pq;
 
     public Dijkstra(EdgeWeightedDigraph G, int s) {
-        for (DirectedEdge e : G.edges()) {
-            if (e.getWeight() < 0) {
-                throw new IllegalArgumentException("edge " + e + " has negative weight");
+        for (DirectedEdge edge : G.edges()) {
+            if (edge.getWeight() < 0) {
+                throw new IllegalArgumentException("edge " + edge + " has negative weight");
             }
         }
         edgeTo = new DirectedEdge[G.getVertices()];
