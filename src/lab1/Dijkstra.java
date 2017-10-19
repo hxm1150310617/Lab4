@@ -55,7 +55,7 @@ public class Dijkstra {
     }
 
     public Iterable<DirectedEdge> pathTo(int v) {
-        if (!hasPathTo(v)) return null;
+        if (!hasPathTo(v)) {return null;}
         Stack<DirectedEdge> path = new Stack<>();
         for (DirectedEdge e = edgeTo[v]; e != null; e = edgeTo[e.from()]) {
             path.push(e);
