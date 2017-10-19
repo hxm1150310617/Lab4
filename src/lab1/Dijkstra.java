@@ -40,7 +40,7 @@ public class Dijkstra {
             if (distTo[w] > (distTo[v] + e.getWeight())) {
                 distTo[w] = distTo[v] + e.getWeight();
                 edgeTo[w] = e;
-                if (pq.contains(w)) pq.changeKey(w, distTo[w]);
+                if (pq.Contains(w)) pq.changeKey(w, distTo[w]);
                 else pq.insert(w, distTo[w]);
             }
         }

@@ -36,7 +36,7 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
 
     public void insert(int i, Key key) {
         if (i < 0 || i >= maxN) throw new IllegalArgumentException();
-        if (contains(i)) throw new IllegalArgumentException("index is already in the priority queue");
+        if (Contains(i)) throw new IllegalArgumentException("index is already in the priority queue");
         n++;
         qp[i] = n;
         pq[n] = i;
@@ -82,7 +82,7 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
 
     public void decreaseKey(int i, Key key) {
         if (i < 0 || i >= maxN) throw new IllegalArgumentException();
-        if (!contains(i)) throw new NoSuchElementException("index is not in the priority queue");
+        if (!Contains(i)) throw new NoSuchElementException("index is not in the priority queue");
         if (keys[i].compareTo(key) <= 0)
             throw new IllegalArgumentException("Calling decreaseKey() with given argument would not strictly decrease the key");
         keys[i] = key;
@@ -91,7 +91,7 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
 
     public void increaseKey(int i, Key key) {
         if (i < 0 || i >= maxN) throw new IllegalArgumentException();
-        if (!contains(i)) throw new NoSuchElementException("index is not in the priority queue");
+        if (!Contains(i)) throw new NoSuchElementException("index is not in the priority queue");
         if (keys[i].compareTo(key) >= 0)
             throw new IllegalArgumentException("Calling increaseKey() with given argument would not strictly increase the key");
         keys[i] = key;

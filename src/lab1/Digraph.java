@@ -58,7 +58,7 @@ public class Digraph {
         for (int i = 0; i < edges; i++) {
             String v = scanner.next();
             String w = scanner.next();
-            addEdge(v, w);
+            AddEdge(v, w);
         }
         scanner.close();
 

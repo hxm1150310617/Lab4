@@ -33,8 +33,8 @@ public class Main {
         System.out.println("==========test entry ends===========");
 
         System.out.println("======================================");
-        System.out.println("Edges: " + digraph.getEdges());
-        System.out.println("Vertices: " + digraph.getVertices());
+        System.out.println("Edges: " + digraph.GetEdges());
+        System.out.println("Vertices: " + digraph.GetVertices());
         System.out.println(digraph.toString());
 
 
